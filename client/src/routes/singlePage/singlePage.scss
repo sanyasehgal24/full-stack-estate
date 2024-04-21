@@ -7,6 +7,11 @@
   @include md {
     flex-direction: column;
     overflow: scroll;
+
+  }
+  .span {
+    height:100px;
+    width:100px;
   }
 
   .details {
@@ -102,7 +107,7 @@
   }
   .features {
     flex: 2;
-    background-color: #fcf5f3;
+    background-color: white;
     height: 100%;
     overflow-y: scroll;
 

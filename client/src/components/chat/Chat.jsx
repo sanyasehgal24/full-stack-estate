@@ -8,6 +8,7 @@ import { useNotificationStore } from "../../lib/notificationStore";
 
 function Chat({ chats }) {
   const [chat, setChat] = useState(null);
+  console.log(chats);
   const { currentUser } = useContext(AuthContext);
   const { socket } = useContext(SocketContext);
 

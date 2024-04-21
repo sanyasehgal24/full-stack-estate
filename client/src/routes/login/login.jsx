@@ -26,8 +26,8 @@ function Login() {
         username,
         password,
       });
-
-      updateUser(res.data)
+   // localStorage.setItem("user", JSON.stringify(res.data));
+       updateUser(res.data)
 
       navigate("/");
     } catch (err) {
@@ -61,7 +61,7 @@ function Login() {
         </form>
       </div>
       <div className="imgContainer">
-        <img src="/bg.png" alt="" />
+        <img src="/logoo.png" alt="" />
       </div>
     </div>
   );

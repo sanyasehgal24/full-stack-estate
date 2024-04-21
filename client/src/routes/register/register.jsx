@@ -19,6 +19,7 @@ function Register() {
     const username = formData.get("username");
     const email = formData.get("email");
     const password = formData.get("password");
+    console.log(username,email,password);
 
     try {
       const res = await apiRequest.post("/auth/register", {
@@ -26,6 +27,7 @@ function Register() {
         email,
         password,
       });
+
 
       navigate("/login");
     } catch (err) {
@@ -44,11 +46,11 @@ function Register() {
           <input name="password" type="password" placeholder="Password" />
           <button disabled={isLoading}>Register</button>
           {error && <span>{error}</span>}
-          <Link to="/login">Do you have an account?</Link>
+          {/* <Link to="/login">Do you have an account?</Link> */}
         </form>
       </div>
       <div className="imgContainer">
-        <img src="/bg.png" alt="" />
+        <img src="/logoo.png" alt="" />
       </div>
     </div>
   );
